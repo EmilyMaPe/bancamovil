@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banca Móvil</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff; /* Fondo azul claro */
+        color: #333; /* Texto oscuro para contraste */
+      }
+
+      /* Header */
+      header {
+    background-color: #fff; /* Fondo blanco */
+    color: #004080; /* Texto azul */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para separación */
+  }
+
+  header .logo h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #004080; /* Azul oscuro */
+  }
+
+  header .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Espaciado entre los elementos */
+  }
+
+  header .main-nav ul li a {
+    color: #004080; /* Texto azul */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  header .main-nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+  }
+
+  header .login-button {
+    background-color: #004080; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  header .login-button:hover {
+    background-color: #0059b3; /* Azul intermedio */
+  }
+
+      /* Hero Section */
+      #hero {
+    display: flex;
+    justify-content: center; /* Centrar el cuadro horizontalmente */
+    align-items: center; /* Centrar el cuadro verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f0f8ff; /* Fondo azul claro de la página */
+  }
+
+  .hero-box {
+    background-color: #0073e6; /* Azul brillante */
+    color: #fff; /* Texto blanco */
+    width: 50%; /* Ocupa la mitad del ancho de la página */
+    max-width: 600px; /* Limita el ancho máximo */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del cuadro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el cuadro */
+  }
+
+  .hero-box h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .hero-box p {
+    font-size: 0.9em; /* Tamaño de letra más pequeño */
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    background-color: #004080; /* Azul oscuro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .cta-button:hover {
+    background-color: #0059b3; /* Azul intermedio */
+  }
+
+      /* Features Section */
+      #features {
+        background-color: #e6f2ff; /* Fondo azul muy claro */
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      #features h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+      }
+
+      .feature-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .feature-item {
+        background-color: #ffffff; /* Fondo blanco */
+        border: 1px solid #0073e6; /* Borde azul brillante */
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-item h3 {
+        color: #004080; /* Azul oscuro */
+        margin-bottom: 10px;
+      }
+
+      .feature-item p {
+        color: #333; /* Texto oscuro */
+      }
+
+      /* Footer */
+      footer {
+        background-color: #004080; /* Azul oscuro */
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <h1>BBVA</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#accounts">Cuentas</a></li>
+          <li><a href="#cards">Tarjetas</a></li>
+          <li><a href="#transfers">Transferencias</a></li>
+          <li><a href="#help">Ayuda</a></li>
+        </ul>
+      </nav>
+      <button class="login-button">Iniciar sesión</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section id="hero">
+        <div class="hero-box">
+          <h1>Bienvenido a BBVA Banca Móvil</h1>
+          <p>Explora nuestras opciones: Cuentas, Tarjetas, Transferencias y Ayuda. Todo lo que necesitas para gestionar tus finanzas.</p>
+          <button class="cta-button">Crear nueva cuenta</button>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2>Nuestros Servicios</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h3>Transferencias</h3>
+            <p>Envía dinero a cualquier lugar del mundo.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Pagos</h3>
+            <p>Paga tus facturas de manera rápida y sencilla.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Consultas</h3>
+            <p>Revisa tus movimientos y saldos en tiempo real.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Banca Móvil. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
